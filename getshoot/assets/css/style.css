@@ -1,0 +1,201 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------------Widths------------*/
+
+.w-20 {
+    width: 20%;
+}
+
+/*-----------Paddings------------*/
+
+.pp-padding {
+    padding: 60px;
+}
+
+
+/*-----------Margins------------*/
+
+.neg-mar {
+    margin-left:-70px;
+}
+
+/*----------Font Weights-----------*/
+
+.bold {
+    font-weight: 700;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+/*----------Font Sizes-----------*/
+.fsp7 {
+    font-size: 0.7rem;
+}
+.fsp8 {
+    font-size: 0.8rem !important;
+}
+.fsp9 {
+    font-size: 0.9rem !important;
+}
+.fs1 {
+    font-size: 1rem;
+}
+.fs1p1 {
+    font-size: 1.1rem;
+}
+.fs1p2 {
+    font-size: 1.2rem;
+}
+.fs1p3 {
+    font-size: 1.3rem;
+}
+.fs1p4 {
+    font-size: 1.4rem;
+}
+.fs1p5 {
+    font-size: 1.5rem;
+}
+.fs1p6 {
+    font-size: 1.6rem;
+}
+.fs1p7 {
+    font-size: 1.7rem;
+}
+.fs1p8 {
+    font-size: 1.8rem;
+}
+.fs1p9 {
+    font-size: 1.9rem;
+}
+.fs2 {
+    font-size: 2rem;
+}
+.banner-fs2 {
+    font-size: 2rem;
+}
+
+.lg-num {
+    font-size: 240px; 
+    margin-top: -170px;
+}
+
+/*----------Font Colors-----------*/
+
+.f-col1 {
+    color: #919191;
+}
+
+/*----------BG Colors-----------*/
+
+.bg-col1 {
+    background-color: #141b25 !important;
+}
+
+.pic-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*-------------Borders-------------*/
+
+
+.br-1r {
+    border-bottom-right-radius: 50px;
+}
+
+.br-2r {
+    border-top-left-radius: 50px !important;
+}
+
+.br-3r {
+    border-top-right-radius: 50px !important;
+}
+
+.bor-hr {
+    opacity: 1;
+    border: none;
+    background-color: #2a88fc;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 100px;
+    width: 3px;
+}
+
+/*------------Carousel indicators-------*/
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1;
+    background-color: gray !important;
+  }
+
+/*--------- Slick Slider ---------*/
+
+.slider2 {
+ width: 500px; 
+ left: 50%;
+  transform: translateX(-50%);
+  
+  text-align: center;
+}
+
+/* -------------  Slick Slider CSS  -------------- */
+
+.slick-prev::before {
+    content: '‹';
+  }
+
+  .slick-prev, .slick-next, .slick-prev::before, .slick-next::before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(0, 0, 0) !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+/* Buttons */
+
+.n-item {
+    background-color: white;
+    border-radius: 7px;
+    margin-left: 20px;
+    border: 1px solid #000000;
+    font-size: 24px;
+  }
+
+
+
+/*-----------Media Queries-------*/
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+    /*-----------Paddings------------*/
+
+    .pp-padding {
+        padding: 60px;
+    }
+
+    /*-----------Margins------------*/
+
+    .neg-mar {
+        margin-left:0px;
+    }
+
+    /*------------Font sizes--------------*/
+    
+    .lg-num {
+        font-size: 195px; 
+        margin-top: -120px !important;
+    }
+}
