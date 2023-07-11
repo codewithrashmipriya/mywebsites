@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotoGraphy Website</title>
+    <title>GetShot - Photography Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--fa-fa icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,20 +26,23 @@
     <div class="container-fluid bg-col1 d-none d-md-block">
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
-                <div class="col-md-3">
-                    <a class="navbar-brand" href="#"><img src="assets/img/getshot-logo.png" style="width: 179px;" alt="getshot"></a>
+                <div class="col-md-1">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.PNG" style="width: 150px;" alt="getshot"></a>
                 </div>
 
-                <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-light">Shoot types</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">How it Works</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">Pricing</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">2000 Photographer</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">Parter Loging</a></li>
+                <ul class="nav col-md-7 col-md-auto justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-3 link-light">Shoot types</a></li>
+                    <li><a href="#" class="nav-link px-3 link-light">How it Works</a></li>
+                    <li><a href="#" class="nav-link px-3 link-light">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-3 link-light">2000 Photographer</a></li>
                 </ul>
-
-                <div class="col-md-3 text-end">
-                    <button class="btn btn-primary" type="submit">Book a Photographer</button>
+                <div class="col-md-4 text-end">
+                    <!-- <ul class="d-flex align-items-center nav">
+                        <li><a href="#" class="nav-link px-3 link-light bold">Parter Loging</a></li>
+                    </ul> -->
+                    <a class="text-decoration-none text-light bold me-3" type="submit">Partner Login</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                    data-bs-target="#questionnaireModal">Book a Photographer</button>
                 </div>
             </header>
         </div>
@@ -45,7 +50,7 @@
     <!-- Mobile only Navigation -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-col1 d-md-none d-block" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/getshot-logo.png" style="width: 179px;" alt="photo"></a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.PNG" alt="GetShot"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -66,15 +71,20 @@
                         <a class="nav-link active" href="#">2000 Photographer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Parter Loging</a>
+                        <a class="nav-link active bold" href="#">Parter Loging</a>
                     </li>
                 </ul>
-                <button class="btn btn-primary" type="submit">Book a Photographer</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                    data-bs-target="#questionnaireModal">Book a Photographer</button>
+                
             </div>
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="container-fluid px-0">
+   <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/img/banner-three.png" class="d-block w-100" alt="slider-three"
+                                    style="height:550px;">
+                            </div>        <div class="container-fluid px-0">
             <div class="row align-items-center">
                 <div class="col-md-6 px-0">
                     <div id="banner-slider" class="carousel slide" data-bs-ride="carousel">
@@ -86,16 +96,17 @@
                         </div> -->
                         <div class="carousel-inner  br-1r">
                             <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="assets/img/banner-one.jpg" class="d-block w-100" alt="slider-one">
+                                <img src="assets/img/banner-one.jpg" class="d-block w-100" alt="slider-one"
+                                    style="height:550px;">
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="assets/img/banner-two.jpg" class="d-block w-100" alt="slider-two">
+                                <img src="assets/img/banner-two.jpg" class="d-block w-100" alt="slider-two"
+                                    style="height:550px;">
                             </div>
+                         
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="assets/img/banner-three.jpg" class="d-block w-100" alt="slider-three">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                <img src="assets/img/banner-four.jpg" class="d-block w-100" alt="slider-four">
+                                <img src="assets/img/banner-four.jpg" class="d-block w-100" alt="slider-four"
+                                    style="height:550px;">
                             </div>
                         </div>
                         <!-- <button class="carousel-control-prev" type="button" data-bs-target="#banner-slider" data-bs-slide="prev">
@@ -113,677 +124,1978 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12 text-center">
-                                    <h1>Most efficient &<br>easiest way to find a<br><span class="text-primary">trusted
-                                            photographer</span></h1>
+                                    <h2 class="bold">Most efficient &<br>easiest way to find a<br><span
+                                            class="text-primary">trusted
+                                            photographer</span></h2>
                                     <p class="fs2" style="font-family:'Times New Roman', Times, serif;">
-                                        <em>With</em><img class="mx-2" style="width: 50px;" src="assets/img/getshott.png"
-                                            alt="logo-two"><em>Getshot</em></p>
-                                    <button type="button" class="btn btn-primary btn-lg">BOOK NOW FROM RS.999</button>
+                                        <em>With</em><img class="mx-2" style="width: 50px;" src="assets/img/logo-two.PNG"
+                                            alt="logo-two"><em>GetShot</em>
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg fs1p2">BOOK NOW FROM
+                                        RS.999</button>
                                 </div>
                             </div>
-                            <div class="row my-4">
-                                <div class="col-12 text-start">
-                                    <p class="fs1p5">Getshot connects you with pre-vetted pro photographers<br>for all of
-                                        your need at
-                                        affordable fixed prices.</p>
+                            <div class="row mt-3">
+                                <div class="col-12 text-center">
+                                    <p class="fs1p5">GetShot connects you with pre-vetted pro photographers<br>for all of
+                                        your need at affordable fixed prices.</p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 mt-3">
+                            <div class="row mt-md-0">
+                                <div class="col-md-4">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/img/icon-a.png" alt="timer" style="width: 50px; height: 50px;">
+                                        <img src="assets/img/icon-a.png" alt="timer" style="width: 55px; height: 55px;">
                                         <div class="ms-2">
-                                            <p class="mb-0"><strong>FAST DELIVERY GURANTEED</strong></p>
-                                            <p class="mb-0">PHOTOS DELIVERED IN 48 HOURS</p>
+                                            <p class="mb-0 fsp7"><strong>FAST DELIVERY GURANTEED</strong></p>
+                                            <p class="mb-0 fsp7">PHOTOS DELIVERED IN 48 HOURS</p>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="col-md-6 my-3">
+                                <div class="col-md-4">
                                     <div class="d-flex align-items-center">
                                         <img src="assets/img/icon-b.png" alt="reliable"
                                             style="width: 50px; height: 50px;">
                                         <div class="ms-2">
-                                            <p class="mb-0"><strong>RELIABILITY GURANTEED</strong></p>
-                                            <p class="mb-0">PHOTOS DELIVERWD IN 48 HOURS</p>
+                                            <p class="mb-0 fsp7"><strong>RELIABILITY GURANTEED</strong></p>
+                                            <p class="mb-0 fsp7">NO LAST-MINUTES CANCELLATIONS</p>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
-                            <div class="row my-md-3">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/icon-c.png" alt="quality"
+                                            style="width: 50px; height: 50px;">
+                                        <div class="ms-2">
+                                            <p class="mb-0 fsp7"><strong>QUALITY GURANTEED</strong></p>
+                                            <p class="mb-0 fsp7">HIGH QUALITY RESULTS EVERY TIME</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="row my-md-3">
                                 <div class="col-md-6 mx-auto">
                                     <div class="d-flex align-items-center">
                                         <img src="assets/img/icon-c.png" alt="quality"
                                             style="width: 50px; height: 50px;">
                                         <div class="ms-2">
-                                            <p class="mb-0"><strong>QUALITY GURANTEED</strong></p>
-                                            <p class="mb-0">PHOTOS DELIVERWD IN 48 HOURS</p>
+                                            <p class="mb-0 fsp9"><strong>QUALITY GURANTEED</strong></p>
+                                            <p class="mb-0 fsp9">PHOTOS DELIVERWD IN 48 HOURS</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-5">
-                    <p class="mb-0 text-primary text-center fs1p6">Personal</p>
-                    <div class="slider2 d-none d-md-block" style="margin-top: -30px;">
-                        <img src="assets/img/pp-1.png" alt="pp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/pp-2.png" alt="pp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/pp-3.png" alt="pp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/pp-4.png" alt="pp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/pp-5.png" alt="pp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/pp-6.png" alt="pp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/pp-7.png" alt="pp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/pp-8.png" alt="pp" class="pp-padding" style="height:auto;">
-                    </div>
-                    <div id="mobileppslider" class="carousel slide d-md-none carousel-dark d-block mt-3">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/pp-1.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+        <div class="container-fluid">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-5">
+                        <p class="mb-3 text-primary text-center fs1p6 bold">Personal</p>
+                        <div class="personal-slider">
+                            <div class="text-center">
+                                <img src="assets/img/pp-1.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/pp-2.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/pp-2.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/pp-3.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/pp-3.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/pp-4.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/pp-4.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/pp-5.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/pp-5.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/pp-6.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/pp-6.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/pp-7.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/pp-7.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/pp-8.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/pp-8.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileppslider"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#mobileppslider"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
-                </div>
-                <div class="col-md-2 d-none d-md-block">
-                    <hr class="bor-hr">
-                </div>
-                <div class="col-md-5 mt-5 mt-md-0">
-                    <p class="mb-0 text-primary text-center fs1p6">Business</p>
-                    <div class="slider2 d-none d-md-block" style="margin-top: -30px;">
-                        <img src="assets/img/bp-1.png" alt="bp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/bp-2.png" alt="bp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/bp-3.png" alt="bp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/bp-4.png" alt="bp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/bp-5.png" alt="bp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/bp-6.png" alt="bp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/bp-7.png" alt="bp" class="pp-padding" style="height:auto;">
-                        <img src="assets/img/bp-8.png" alt="bp" class="pp-padding" style="height:auto;">
+                    <div class="col-md-2 d-none d-md-block">
+                        <hr class="bor-hr">
                     </div>
-                    <div id="mobilebpslider" class="carousel slide d-md-none carousel-dark d-block mt-3">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/bp-1.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                    <div class="col-md-5">
+                        <p class="mb-3 text-primary text-center fs1p6 bold">Business</p>
+                        <div class="business-slider">
+                            <div class="text-center">
+                                <img src="assets/img/bp-1.png" alt="bp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/bp-2.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/bp-2.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/bp-3.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/bp-3.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/bp-4.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/bp-4.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/bp-5.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/bp-5.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/bp-6.png" style="width: 60px !important;"
-                                    class="mx-auto d-block w-100" alt="...">
+                            <div class="text-center">
+                                <img src="assets/img/bp-6.png" alt="pp" class="mx-auto slider-icons">
+                                <p class="mb-0 fsp9 bold mt-2">Birthday<br>Photography</p>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#mobilebpslider"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#mobilebpslider"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p class="fs2 text-primary bold mb-2">HOW IT WORKS</p>
-                    <p class="fs2 mb-5 lh-1">It takes only 90 seconds to book</p>
-                    <button class="btn btn-primary btn-lg">Book a photographer now</button>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="fs2 text-primary bold mb-2">HOW IT WORKS</p>
+                        <p class="fs2 mb-5 lh-1">It takes only 90 seconds to book</p>
+                        <button class="btn btn-primary btn-lg">Book a photographer now</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 my-4 md-4">
-                    <div class="card rounded-0 border-0 mt-5">
-                        <img src="assets/img/card-p1.jpg" class="card-img-top rounded-0  br-3r" alt="photographer">
-                        <div class="card-body p-0">
-                            <div class="d-flex">
-                                <p class="bold fs1p3 lh-1 mt-2">We'll match you the best photographer every time.</p>
-                                <p class="me-0 f-col1 mb-0 lh-1 lg-num"
-                                    style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top: -150px;">1.
+        <div class="container-fluid mt-5">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-md-4 my-4">
+                        <div class="card rounded-0 border-0 mt-5">
+                            <img src="assets/img/card-p1.jpg" class="card-img-top rounded-0  br-3r" alt="photographer">
+                            <div class="card-body p-0">
+                                <div class="d-flex">
+                                    <p class="bold fs1p1 lh-1 mt-2">We'll match you the best photographer every time.
+                                    </p>
+                                    <p class="me-0 f-col1 mb-0 lh-1 lg-num"
+                                        style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top: -150px;">
+                                        1.
+                                    </p>
+                                </div>
+                                <p class="f-col1 fsp8">You let us know when, where and why, and we will take care for
+                                    the
+                                    rest.
+                                    GetShot will recommend the best-matched photographers in realtime.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4">
+                        <div class="card rounded-0 border-0 mb-0">
+                            <img src="assets/img/card-p2.jpg" class="card-img-top rounded-0  br-3r" alt="photo"
+                                style="height:250px;">
+                            <div class="card-body p-0">
+                                <div class="d-flex">
+                                    <p class="bold fs1p1 lh-1 mt-2">All you need to do is turn up.</p>
+                                    <p class="me-0 f-col1 mb-0 lh-1 lg-num"
+                                        style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top: -150px;">
+                                        2.
+                                    </p>
+                                </div>
+                                <p class="f-col1 fsp8">Your GetShot photographer will bring their professional-grade
+                                    equipment
+                                    to your location at your chosen time, and you can relax in the hands of an
+                                    experience creative.
                                 </p>
                             </div>
-                            <p class="f-col1">Lorem ipsum dolor sit amet consectetur nobis adipisicing elit. Nobis
-                                magnam nobis temporey nisi tempore et nisi.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 my-4 md-4">
-                    <div class="card rounded-0 border-0">
-                        <img src="assets/img/card-p2.jpg" class="card-img-top rounded-0  br-3r" alt="photo">
-                        <div class="card-body p-0">
-                            <div class="d-flex">
-                                <p class="bold fs1p3 lh-1 mt-2">We'll match you the best photographer every time.</p>
-                                <p class="me-0 f-col1 mb-0 lh-1 lg-num"
-                                    style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top: -150px;">2.
+                    <div class="col-md-4 my-4">
+                        <div class="card rounded-0 border-0 mt-5">
+                            <img src="assets/img/card-p3.jpg" class="card-img-top rounded-0  br-3r" alt="editing">
+                            <div class="card-body p-0">
+                                <div class="d-flex">
+                                    <p class="bold fs1p1 lh-1 mt-2">Edited photos ready to share and use in record time!
+                                    </p>
+                                    <p class="me-0 f-col1 mb-0 lh-1 lg-num"
+                                        style="font-family:Georgia, 'Times New Roman', Times, serif;">3.</p>
+                                </div>
+                                <p class="f-col1 fsp8">Within 48 hours of your shoot, your edited photos will be
+                                    delivered
+                                    via the GetShot app, with one click sharing or downloading.
                                 </p>
                             </div>
-                            <p class="f-col1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam
-                                tempore et nisi.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam tempore et nisi.
-                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 my-4 md-4">
-                    <div class="card rounded-0 border-0 mt-5">
-                        <img src="assets/img/card-p3.jpg" class="card-img-top rounded-0  br-3r" alt="editing">
-                        <div class="card-body p-0">
-                            <div class="d-flex">
-                                <p class="bold fs1p3 lh-1 mt-2">We'll match you the best photographer every time.</p>
-                                <p class="me-0 f-col1 mb-0 lh-1 lg-num"
-                                    style="font-family:Georgia, 'Times New Roman', Times, serif;">3.</p>
-                            </div>
-                            <p class="f-col1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam
-                                tempore et nisi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center mx-auto">
-                    <button class="btn btn-outline-dark"> <i class="fa fa-play text-primary fsp8"></i> Watch the
-                        video</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 my-3">
-                    <p class="fs1p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam consequuntur ipsum
-                        maxime suscipit temporibus expedita illo aliquid pariatur quam dolore.</p>
-                    <p class="fs1p4 mt-4">Hire a photographer less than 2 minutes.</p>
-                </div>
-                <div class="col-md-6 my-3">
-                    <iframe style="width:100%;height:400px;" src="https://www.youtube.com/embed/uUhF_NV0ApU"
-                        title="Drones are AMAZING at wedding photography" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid py-5 pic-bg" style="background-image:linear-gradient(180deg, rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.712)), url('assets/img/bg-pic.jpeg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="n-item" role="presentation">
-                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                aria-selected="true">Personal</button>
-                        </li>
-                        <li class="n-item " role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                                aria-selected="false">Business</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab" tabindex="0">
-                            <div class="row">
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Wedding</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Wedding</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Wedding</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Wedding</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Wedding</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Wedding</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab" tabindex="0">
-                            <div class="row">
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Business</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Business</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Business</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Business</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Business</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 px-3 py-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:200px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <p class="mb-0 text-light bold fs1p6">Business</p>
-                                                    <p class="mb-0 text-light fsp8 lh-sm">This is a image on text. Thank
-                                                        you.</p>
-                                                    <p class="mb-0 text-light bold fsp9" style="margin-top: 80px;">From
-                                                        ₹599</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
-                                                style="height:100px;padding:2px;">
-                                            <div class="card text-bg-light border-0 shadow-none">
-                                                <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
-                                                    alt="..." style="height:100px;padding:2px;">
-                                                <div class="card-img-overlay">
-                                                    <span class="badge rounded-pill text-bg-primary"
-                                                        style="margin-top: 70px;">Book Now</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-md-4 text-center mx-auto">
+                        <button class="btn btn-outline-dark"> <i class="fa fa-play text-primary fsp8"></i> Watch the
+                            video</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-        crossorigin="anonymous"></script>
-    <!--Slick Slider CDN-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
+        <div class="container-fluid mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 my-3">
+                        <p class="fs1p4">Get access to photographers woldwide and on-demand.
+                            Hiring a photographer has never been this easy.</p>
+                        <p class="fs1p4 mt-4">Hire a photographer less than 2 minutes.</p>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <iframe style="width:100%;height:400px;" src="https://www.youtube.com/embed/uUhF_NV0ApU"
+                            title="Drones are AMAZING at wedding photography" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5 pic-bg"
+            style="background-image:linear-gradient(180deg, rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.712)), url('assets/img/bg-pic.jpeg');">
+            <div class="container">
+                <div class="row">
+                    <div class="md-12 text-center">
+                        <p class="bold f-col2 fs2">What ever the need we've got you covered!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="n-item my-2" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Personal</button>
+                            </li>
+                            <li class="n-item my-2" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Business</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="personal-tab">
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="business-tab">
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-4">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:200px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <p class="mb-0 text-light bold fs1p6">Business</p>
+                                                            <p class="mb-0 text-light fsp8 lh-sm">This is a image on
+                                                                text.
+                                                                Thank
+                                                                you.</p>
+                                                            <p class="mb-0 text-light bold fsp9"
+                                                                style="margin-top: 80px;">
+                                                                From
+                                                                ₹599</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/img/banner-four.jpg" alt="" class="br-3r"
+                                                        style="height:100px;padding:2px;">
+                                                    <div class="card text-bg-light border-0 shadow-none">
+                                                        <img src="assets/img/banner-one.jpg" class="card-img rounded-0"
+                                                            alt="..." style="height:100px;padding:2px;">
+                                                        <div class="card-img-overlay">
+                                                            <a class="badge rounded-pill text-bg-primary text-decoration-none"
+                                                                style="margin-top: 70px;" href="#">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center mt-4 fs1p4">
+                        <p class="bold">Don't see what you're looking for? We can find the perfect photographer for any
+                            situation, So get in touch!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row py-5">
+                    <p class="bold fs1p7 f-col2 text-center mt-3">Only Great Photographer</p>
+                    <p class="bold fs1p2 text-center">GetShot hand picks the best photographers through a rigorous
+                        vetting
+                        process. These folks are licenced to shoot.</p>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-md-3 px-4 my-3">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/great-p-1.jpg"
+                                class="card-img-top rounded-circle w-25 mx-auto mt-5 mb-2 " alt="great-photographer">
+                            <div class="card-body py-0">
+                                <p class="bold fs1 text-center mb-0 lh-1">John T</p>
+                                <p class="text-center my-0 fsp9"><i>Melbourne</i></p>
+                                <div class="text-center my-0 fsp9 lh-1">
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                </div>
+                                <p class="text-center mt-1 mb-3"><i class="fa fa-camera me-2" aria-hidden="true">
+                                    </i>Nikon
+                                    D800</p>
+                                <p class="text-center fsp9"><i>Specialist in:</i></p>
+                                <div class="d-flex justify-content-evenly mb-5">
+                                    <a href="#" class="btn btn-primary btn-sm">Potrait</a>
+                                    <a href="#" class="btn btn-primary btn-sm">Event</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-4 my-3">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/great-p-1.jpg"
+                                class="card-img-top rounded-circle w-25 mx-auto mt-5 mb-2 " alt="great-photographer">
+                            <div class="card-body py-0">
+                                <p class="bold fs1 text-center mb-0 lh-1">John T</p>
+                                <p class="text-center my-0 fsp9"><i>Melbourne</i></p>
+                                <div class="text-center my-0 fsp9 lh-1">
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                </div>
+                                <p class="text-center mt-1 mb-3"><i class="fa fa-camera me-2" aria-hidden="true">
+                                    </i>Nikon
+                                    D800</p>
+                                <p class="text-center fsp9"><i>Specialist in:</i></p>
+                                <div class="d-flex justify-content-evenly mb-5">
+                                    <a href="#" class="btn btn-primary btn-sm">Family</a>
+                                    <a href="#" class="btn btn-primary btn-sm">Real Ested</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-4 my-3">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/great-p-1.jpg"
+                                class="card-img-top rounded-circle w-25 mx-auto mt-5 mb-2 " alt="great-photographer">
+                            <div class="card-body py-0">
+                                <p class="bold fs1 text-center mb-0 lh-1">John T</p>
+                                <p class="text-center my-0 fsp9"><i>Melbourne</i></p>
+                                <div class="text-center my-0 fsp9 lh-1">
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                </div>
+                                <p class="text-center mt-1 mb-3"><i class="fa fa-camera me-2"
+                                        aria-hidden="true"></i>Nikon
+                                    D800</p>
+                                <p class="text-center fsp9"><i>Specialist in:</i></p>
+                                <div class="d-flex justify-content-evenly mb-5">
+                                    <a href="#" class="btn btn-primary btn-sm">Weddings</a>
+                                    <a href="#" class="btn btn-primary btn-sm">Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-4 my-3">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/great-p-1.jpg"
+                                class="card-img-top rounded-circle w-25 mx-auto mt-5 mb-2 " alt="great-photographer">
+                            <div class="card-body py-0">
+                                <p class="bold fs1 text-center mb-0 lh-1">John T</p>
+                                <p class="text-center my-0 fsp9"><i>Melbourne</i></p>
+                                <div class="text-center my-0 fsp9 lh-1">
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                </div>
+                                <p class="text-center mt-1 mb-3"><i class="fa fa-camera me-2" aria-hidden="true">
+                                    </i>Nikon
+                                    D800</p>
+                                <p class="text-center fsp9"><i>Specialist in:</i></p>
+                                <div class="d-flex justify-content-evenly mb-5">
+                                    <a href="#" class="btn btn-primary btn-sm">Potrait</a>
+                                    <a href="#" class="btn btn-primary btn-sm">Event</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center bold fs1p8 py-3">Don't see enough GetShot photographers in your area?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 my-3">
+                        <input class="form-control mb-4 border border-dark rounded-0 fs1p3 ps-4" type="text"
+                            placeholder="Name" aria-label="default input example" style="height:60px;">
+                        <input class="form-control border border-dark rounded-0 fs1p2 ps-4" type="text"
+                            placeholder="E-mail" aria-label="default input example" style="height:60px;">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <input class="form-control mb-4 border border-dark rounded-0 fs1p2 ps-4" type="text"
+                            placeholder="Phone no" aria-label="default input example" style="height:60px;">
+                        <input class="form-control border border-dark rounded-0 fs1p2 ps-4" type="text"
+                            placeholder="Zip Code" aria-label="default input example" style="height:60px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center my-4">
+                        <button class="btn btn-primary btn-lg  rounded-pill px-4">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pic-bg-one"
+            style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/img/bg-p-2.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 py-5">
+                        <p class="bold fs1p6 text-center text-light">In The News...</p>
+                        <p class=" bold fs1p4 text-left text-light">
+                            <i>"GetShot Digital India backed by a creative team of analysts, developers,
+                                designers, animators, photographers,and a record of over a 12000+
+                                successful projects, is one stop shop for all business set up and full-fledged
+                                marketing requirements"</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cotainer-fluid">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-md-3 text-center">
+                        <img src="assets/img/brand-1.png" style="width: 150px;" alt="brand-one">
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="assets/img/brand-2.png" style="width: 150px;" alt="brand-two">
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="assets/img/brand-3.png" style="width: 150px;" alt="brand-three">
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="assets/img/brand-4.png" style="width: 150px;" alt="brand-four">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-col2 p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-left">
+                        <p class="bold mb-0 fs1p5">Favourite photo shoots</p>
+                        <p>Get inspired by our clients' photoshoots and what they say about the experience</p>
+                    </div>
+                </div>
+                <div class="row bg-col2 photo-shoots">
+                    <div class="col-md-4 md-4 p-3">
+                        <div class="card border-0 shadow p-3 mb-1 bg-body-tertiary rounded">
+                            <P><i class="fa fa-picture-o" aria-hidden="true"></i>
+                                Tom's Family Holiday in Bali</P>
+                            <img src="assets/img/card-p1.jpg" class="card-img-top" alt="photographer">
+                            <div class="card-body p-0">
+                                <p class="f-col1">You let us know when, where and why, and we will take care for the
+                                    rest. GetShot will recommend the best-matched photographers in realtime.</p>
+                                <a href="#" class="card-link text-decoration-none fsp9">View Photo Album > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md-4 p-3">
+                        <div class="card border-0 shadow p-3 mb-1 bg-body-tertiary rounded">
+                            <P><i class="fa fa-picture-o" aria-hidden="true"></i>
+                                Dazen's Babymoon Trip In Seoul</P>
+                            <img src="assets/img/card-p1.jpg" class="card-img-top" alt="photographer">
+                            <div class="card-body p-0">
+                                <p class="f-col1">You let us know when, where and why, and we will take care for the
+                                    rest.
+                                    GetShot will recommend the best-matched photographers in realtime.</p>
+                                <a href="#" class="card-link text-decoration-none fsp9">View Photo Album > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md-4 p-3">
+                        <div class="card border-0 shadow p-3 mb-1 bg-body-tertiary rounded">
+                            <P><i class="fa fa-picture-o" aria-hidden="true"></i>
+                                Tom's Family Holiday in Bali</P>
+                            <img src="assets/img/card-p1.jpg" class="card-img-top" alt="photographer">
+                            <div class="card-body p-0">
+                                <p class="f-col1">You let us know when, where and why, and we will take care for the
+                                    rest.
+                                    GetShot will recommend the best-matched photographers in realtime.</p>
+                                <a href="#" class="card-link text-decoration-none fsp9">View Photo Album > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md-4 p-3">
+                        <div class="card border-0 shadow p-3 mb-1 bg-body-tertiary rounded">
+                            <P><i class="fa fa-picture-o" aria-hidden="true"></i>
+                                Tom's Family Holiday in Bali</P>
+                            <img src="assets/img/card-p1.jpg" class="card-img-top" alt="photographer">
+                            <div class="card-body p-0">
+                                <p class="f-col1">You let us know when, where and why, and we will take care for the
+                                    rest.
+                                    GetShot will recommend the best-matched photographers in realtime.</p>
+                                <a href="#" class="card-link text-decoration-none fsp9">View Photo Album > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md-4 p-3">
+                        <div class="card border-0 shadow p-3 mb-1 bg-body-tertiary rounded">
+                            <P><i class="fa fa-picture-o" aria-hidden="true"></i>
+                                Tom's Family Holiday in Bali</P>
+                            <img src="assets/img/card-p1.jpg" class="card-img-top" alt="photographer">
+                            <div class="card-body p-0">
+                                <p class="f-col1">You let us know when, where and why, and we will take care for the
+                                    rest.
+                                    GetShot will recommend the best-matched photographers in realtime.</p>
+                                <a href="#" class="card-link text-decoration-none fsp9">View Photo Album > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md-4 p-3">
+                        <div class="card border-0 shadow p-3 mb-1 bg-body-tertiary rounded">
+                            <P><i class="fa fa-picture-o" aria-hidden="true"></i>
+                                Tom's Family Holiday in Bali</P>
+                            <img src="assets/img/card-p1.jpg" class="card-img-top" alt="photographer">
+                            <div class="card-body p-0">
+                                <p class="f-col1">You let us know when, where and why, and we will take care for the
+                                    rest.
+                                    GetShot will recommend the best-matched photographers in realtime.</p>
+                                <a href="#" class="card-link text-decoration-none fsp9">View Photo Album > </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="bold fs1p5 f-col1">Tagged from our client's Instagram feeds</p>
+                    </div>
+                </div>
+                <div class="row mx-auto justify-content-center insta-posts">
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class=" card shadow bg-body-tertiary rounded-0 border-0">
+                            <img src="assets/img/great-p-3.jpg" alt="">
+                            <img src="assets/img/instagram-icon.png" alt="ig"
+                                style="position: absolute; right: 10px; top: 10px; width: 30px; height: 30px;">
+                            <div class="card-body ">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/great-p-3.jpg" alt="" style="width:50px; height:50px;"
+                                            class="mt-3 rounded-circle">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mb-0 mt-3 bold fsp9 ms-0"> hello</p>
+                                        <p class="mb-0 fsp7 ms-0"> hi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-col2 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>We don't like to boast, but here are some of the brands our photographers are worked for.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                </div>
+                <div class="row  my-4">
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                    <div class="col-md-2 text-center my-3">
+                        <img src="assets/img/work-1.png" alt="brand-four">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-col3 py-4 br-3r">
+            <div class="container d-md-none d-block">
+                <div class="row align-items-center">
+                    <div class="col-md-3 my-3 text-center">
+                        <img src="assets/img/logo.PNG" alt="footer-logo">
+                    </div>
+                    <div class="col-md-6 my-3 text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="text-light text-decoration-none">Home</a>
+                            <a href="#" class="text-light text-decoration-none">Services</a>
+                            <a href="#" class="text-light text-decoration-none">About</a>
+                            <a href="#" class="text-light text-decoration-none">Contact</a>
+                            <a href="#" class="text-light text-decoration-none">Explore</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3 text-center">
+                        <i class="fa fa-twitter text-light fs1p5"></i>
+                        <i class="fa fa-facebook text-light fs1p5 ms-3"></i>
+                        <i class="fa fa-instagram text-light fs1p5 ms-3"></i>
+                        <i class="fa fa-linkedin text-light fs1p5 ms-3"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-none d-md-block">
+                <div class="row align-items-center">
+                    <div class="col-md-3 my-3 text-start">
+                        <img src="assets/img/logo.PNG" alt="footer-logo">
+                    </div>
+                    <div class="col-md-6 my-3 text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="text-light text-decoration-none">Home</a>
+                            <a href="#" class="text-light text-decoration-none">Services</a>
+                            <a href="#" class="text-light text-decoration-none">About</a>
+                            <a href="#" class="text-light text-decoration-none">Contact</a>
+                            <a href="#" class="text-light text-decoration-none">Explore</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3 text-end">
+                        <i class="fa fa-twitter text-light fs1p5"></i>
+                        <i class="fa fa-facebook text-light fs1p5 ms-3"></i>
+                        <i class="fa fa-instagram text-light fs1p5 ms-3"></i>
+                        <i class="fa fa-linkedin text-light fs1p5 ms-3"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mx-auto my-3">
+                        <p class="text-white ">All prices are listed for bookings in Bangalore and are in Mumbai</p>
+                        <p class="text-white ">92 A, Domlur Layout, Near Red Bus Office, Mahatma Gandhi Road, Bengaluru,
+                            Karnataka 560001</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 my-3">
+                        <p class="bold text-light mb-1">BANGLORE</p>
+                        <p class="bold text-light mb-1">MUMBAI</p>
+                        <p class="bold text-light mb-1">DELHI</p>
+                        <p class="bold text-light mb-1">HYDERABAD</p>
+                        <p class="bold text-light mb-1">KOLKATA</p>
+                        <p class="bold text-light mb-1">CHENNAI</p>
+                        <p class="bold text-light mb-1">TAMILNADU</p>
+                        <p class="bold text-light mb-1">MYSORE</p>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <p class="bold text-light">BANGLORE</p>
+                        <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                            perspiciatis maxime ex repellendus unde ipsum laborum, temporibus qui consequuntur, dolorem
+                            nam nemo, at maiores nisi sunt placeat porro sed. Debitis.</p>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <p class="bold text-light">BANGLORE</p>
+                        <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                            perspiciatis maxime ex repellendus unde ipsum laborum, temporibus qui consequuntur, dolorem
+                            nam nemo, at maiores nisi sunt placeat porro sed. Debitis.</p>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <p class="bold text-light">BANGLORE</p>
+                        <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                            perspiciatis maxime ex repellendus unde ipsum laborum, temporibus qui consequuntur, dolorem
+                            nam nemo, at maiores nisi sunt placeat porro sed. Debitis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Questionnaire Modal -->
+                <div class="modal fade" id="questionnaireModal" tabindex="-1" aria-labelledby="questionnaireModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="questionnaireModalLabel">Questionnaire</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="questionnaireForm">
+                                    <div class="question">
+                                        <div class="mb-3">
+                                            <label for="question1" class="form-label">Question 1</label>
+                                            <div class="d-flex flex-column" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                                                <label class="btn btn-outline-secondary rounded-0 border-1 p-3 text-start mb-3" for="btnradio1"><i class="fa fa-briefcase fs1p4" aria-hidden="true"></i> <span class="ms-2">Business</span></label>
 
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="mb-3">
+                                            <label for="question2" class="form-label">Question 2</label>
+                                            <input type="text" class="form-control" id="question2" name="question2"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="mb-3">
+                                            <label for="question3" class="form-label">Question 3</label>
+                                            <input type="text" class="form-control" id="question3" name="question3"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="mb-3">
+                                            <label for="question4" class="form-label">Question 4</label>
+                                            <input type="text" class="form-control" id="question4" name="question4"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="mb-3">
+                                            <label for="question5" class="form-label">Question 5</label>
+                                            <input type="text" class="form-control" id="question5" name="question5"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" id="previousButton"
+                                            disabled>Previous</button>
+                                        <button type="button" class="btn btn-primary" id="nextButton">Next</button>
+                                        <button type="submit" class="btn btn-primary" id="submitButton"
+                                            style="display: none;">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!--Slick Slider CDN-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.photo-shoots').slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 3,
+                    centerMode: true,
+                    vertical: false,
+                    arrows: true,
+                    autoplay: true,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            setting: {
+                                slidesToShow: 3,
+                                centerMode: false
+                            }
+                        },
+                        {
+                            breakpoint: 767, settings: {
+                                slidesToShow: 1,
+                                centerMode: false
+                            }
+                        }
+                    ]
+                });
+                $('.insta-posts').slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 5,
+                    centerMode: true,
+                    vertical: false,
+                    arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            setting: {
+                                slidesToShow: 3,
+                                dots: false
+                            }
+                        },
+                        {
+                            breakpoint: 767, settings: {
+                                slidesToShow: 1,
+                                dots: false
+                            }
+                        }
+                    ]
+                });
+                $('.personal-slider').slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 3,
+                    centerMode: false,
+                    vertical: false,
+                    arrows: true,
+                    autoplay: true,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            setting: {
+                                slidesToShow: 3,
+                                dots: false
+                            }
+                        },
+                        {
+                            breakpoint: 767, settings: {
+                                slidesToShow: 2,
+                                dots: false
+                            }
+                        }
+                    ]
+                });
+                $('.business-slider').slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 3,
+                    centerMode: false,
+                    vertical: false,
+                    arrows: true,
+                    autoplay: true,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            setting: {
+                                slidesToShow: 3,
+                                dots: false
+                            }
+                        },
+                        {
+                            breakpoint: 767, settings: {
+                                slidesToShow: 2,
+                                dots: false
+                            }
+                        }
+                    ]
+                });
+                $('.personal-tab').slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 3,
+                    centerMode: false,
+                    vertical: false,
+                    arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            setting: {
+                                slidesToShow: 2,
+                                dots: false
+                            }
+                        },
+                        {
+                            breakpoint: 767, settings: {
+                                slidesToShow: 1,
+                                dots: false
+                            }
+                        }
+                    ]
+                });
 
-            $('.slider2').slick({
-                dots: false,
-                infinite: false,
-                slidesToShow: 3,
-                centerMode: false,
-                vertical: false,
-                arrows: true
             });
-        });
-    </script>
+            $(document).ready(function () {
+                $('.business-tab').slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 3,
+                    centerMode: false,
+                    vertical: false,
+                    arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            setting: {
+                                slidesToShow: 2,
+                                dots: false
+                            }
+                        },
+                        {
+                            breakpoint: 767, settings: {
+                                slidesToShow: 1,
+                                dots: false
+                            }
+                        }
+                    ]
+                });
+            });
+
+            const form = document.getElementById('questionnaireForm');
+            const questions = document.querySelectorAll('.question');
+            const previousButton = document.getElementById('previousButton');
+            const nextButton = document.getElementById('nextButton');
+            const submitButton = document.getElementById('submitButton');
+            let currentQuestionIndex = 0;
+
+            function showQuestion(index) {
+                questions.forEach((question, questionIndex) => {
+                    if (questionIndex === index) {
+                        question.style.display = 'block';
+                    } else {
+                        question.style.display = 'none';
+                    }
+                });
+
+                if (index === 0) {
+                    previousButton.disabled = true;
+                } else {
+                    previousButton.disabled = false;
+                }
+
+                if (index === questions.length - 1) {
+                    nextButton.style.display = 'none';
+                    submitButton.style.display = 'block';
+                } else {
+                    nextButton.style.display = 'block';
+                    submitButton.style.display = 'none';
+                }
+            }
+
+            function goToNextQuestion() {
+                if (currentQuestionIndex < questions.length - 1) {
+                    currentQuestionIndex++;
+                    showQuestion(currentQuestionIndex);
+                }
+            }
+
+            function goToPreviousQuestion() {
+                if (currentQuestionIndex > 0) {
+                    currentQuestionIndex--;
+                    showQuestion(currentQuestionIndex);
+                }
+            }
+
+            nextButton.addEventListener('click', goToNextQuestion);
+            previousButton.addEventListener('click', goToPreviousQuestion);
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Perform form submission or data handling here
+            });
+
+            showQuestion(currentQuestionIndex);
+        </script>
 </body>
 
 </html>
