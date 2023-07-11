@@ -1,0 +1,109 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+.f-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.h-40 {
+height: 40px;
+}
+
+.h-750 {
+    height: 750px;
+}
+
+.bg-col-1 {
+    background-color: #f1c50e;
+}
+
+.bg-col-2 {
+    background-color: #ee1b24;
+}
+
+.bg-col-3 {
+    background-color: #292d33;
+}
+
+.bg-col-4 {
+    background-color: #555c66;
+}
+
+.banner-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fs-1 {
+    font-size: 36px;
+}
+
+.feature-section {
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-section:hover {
+    scale: 1.03;
+}
+
+.bottom-img {
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-img:hover {
+    rotate: 5deg;
+    scale: 1.1;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color:lightgray;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:lightgray;
+  }
+  
+  ::placeholder {
+    color:lightgray;
+  }
+
+.object {
+    animation: MoveUpDown 3s linear infinite;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .h-750 {
+        height: 465px;
+    }
+    .w-50 {
+        width: 100% !important;
+    }
+}
